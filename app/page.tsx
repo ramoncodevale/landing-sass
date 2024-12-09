@@ -9,6 +9,7 @@ import {
   CardFooter,
   CardTitle,
 } from "./_components/ui/card";
+import Footer from "./_components/footer";
 
 const Home = () => {
   return (
@@ -118,6 +119,25 @@ const Home = () => {
             </CardFooter>
           </Card>
         </div>
+
+        <div className="mt-64 flex flex-col items-center">
+          <h1 className="text-6xl font-bold text-black">
+            Pronto Para Mudar Sua Vida?
+          </h1>
+          <p className="mt-2 text-center text-xl text-gray-600">
+            Faça como milhares de outras pessoas. Assine nosso produto e <br />
+            tenha garantido seus produtos
+          </p>
+          <Button className="mt-10 h-[40px] w-[422px] bg-black">
+            Assine Agora
+          </Button>
+          <p className="mt-4 text-xs font-light text-gray-600">
+            Comece sua assinatura agora mesmo. Cancele quando quiser
+          </p>
+        </div>
+      </div>
+      <div className="mt-32">
+        <Footer />
       </div>
     </section>
   );
